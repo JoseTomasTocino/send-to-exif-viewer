@@ -1,12 +1,12 @@
 function launchExifViewer(info, tab) {
   chrome.tabs.create({
-    "url": "http://regex.info/exif.cgi?imgurl=" + escape(info.srcUrl),
+    "url": "https://metadataviewer.herokuapp.com/?img=" + escape(info.srcUrl),
     "index": tab.index + 1
   });
 }
 
 chrome.contextMenus.create({
-  "title": "Send to Jeffrey's Exif Viewer",
+  "title": "Send to image metadata viewer",
   "contexts": ["image"],
   "onclick": launchExifViewer
 });

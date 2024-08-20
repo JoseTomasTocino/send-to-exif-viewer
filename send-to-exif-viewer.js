@@ -1,6 +1,6 @@
 function launchExifViewer(info, tab) {
   chrome.tabs.create({
-    "url": "https://metadataviewer.herokuapp.com/?img=" + escape(info.srcUrl),
+    "url": "https://image-metadata-viewer.onrender.com/?img=" + escape(info.srcUrl),
     "index": tab.index + 1
   });
 }

@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
 
   "name": "Send to Exif Viewer",
   "description": "This extension adds an element to the contextual menu to open images in a metadata (EXIF) viewer.",
@@ -11,9 +11,8 @@
   ],
 
   "background": {
-    "scripts": [
-      "send-to-exif-viewer.js"
-    ]
+    "service_worker": "send-to-exif-viewer.js",
+    "type": "module"
   },
 
   "icons": {

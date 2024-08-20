@@ -3,7 +3,7 @@
 
   "name": "Send to Exif Viewer",
   "description": "This extension adds an element to the contextual menu to open images in a metadata (EXIF) viewer.",
-  "version": "2.0",
+  "version": "2.2",
 
   "permissions": [
     "contextMenus",
